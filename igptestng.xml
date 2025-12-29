@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testpackage.IGPHomepageTest"/>   
+      <class name="testpackage.IGPWishlistTest"/>      
+      <class name="testpackage.IGPCartTest"/>
+      <class name="testpackage.IGPProductDetailsTest"/>
+      <class name="testpackage.IGPGiftCustomizationTest"/>
+      <class name="testpackage.IGPReminderTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

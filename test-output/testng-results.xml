@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="36" passed="30" failed="3" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-29T09:20:08 IST" name="Suite" finished-at="2025-12-29T09:23:56 IST" duration-ms="227712">
+    <groups>
+    </groups>
+    <test started-at="2025-12-29T09:20:08 IST" name="Test" finished-at="2025-12-29T09:23:56 IST" duration-ms="227712">
+      <class name="testpackage.IGPReminderTest">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:31 IST" name="initializePages" finished-at="2025-12-29T09:23:38 IST" duration-ms="6797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:38 IST" name="login" finished-at="2025-12-29T09:23:56 IST" duration-ms="17998" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
+at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="beforeMethod" finished-at="2025-12-29T09:23:56 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPReminderTest.verifyUserCanAddANewReminder()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanAddANewReminder()[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="verifyUserCanAddANewReminder" finished-at="2025-12-29T09:23:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
+at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddANewReminder -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="afterMthd" finished-at="2025-12-29T09:23:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddANewReminder status=SKIP method=IGPReminderTest.verifyUserCanAddANewReminder()[pri:0, instance:testpackage.IGPReminderTest@71d44a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanOpenReminderPageFromHeader()[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="verifyUserCanOpenReminderPageFromHeader" finished-at="2025-12-29T09:23:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
+at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanOpenReminderPageFromHeader -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="beforeMethod" finished-at="2025-12-29T09:23:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPReminderTest.verifyUserCanOpenReminderPageFromHeader()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="afterMthd" finished-at="2025-12-29T09:23:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanOpenReminderPageFromHeader status=SKIP method=IGPReminderTest.verifyUserCanOpenReminderPageFromHeader()[pri:0, instance:testpackage.IGPReminderTest@71d44a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="beforeMethod" finished-at="2025-12-29T09:23:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPReminderTest.verifyUserIsAbleToDeleteReminder() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserIsAbleToDeleteReminder()[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="verifyUserIsAbleToDeleteReminder" finished-at="2025-12-29T09:23:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()='Login via Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ab56bde3a170901582aae016887e513
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
+at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToDeleteReminder -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="afterMthd" finished-at="2025-12-29T09:23:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToDeleteReminder status=SKIP method=IGPReminderTest.verifyUserIsAbleToDeleteReminder()[pri:0, instance:testpackage.IGPReminderTest@71d44a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testpackage.IGPReminderTest@71d44a3]" started-at="2025-12-29T09:23:56 IST" name="tearDownClass" finished-at="2025-12-29T09:23:56 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testpackage.IGPReminderTest -->
+      <class name="testpackage.IGPHomepageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:08 IST" name="setUp" finished-at="2025-12-29T09:20:08 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:08 IST" name="initializePages" finished-at="2025-12-29T09:20:17 IST" duration-ms="8301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:17 IST" name="beforeMethod" finished-at="2025-12-29T09:20:17 IST" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyAllHeaderMenusArePresent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAllHeaderMenusArePresent()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:17 IST" name="verifyAllHeaderMenusArePresent" finished-at="2025-12-29T09:20:18 IST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllHeaderMenusArePresent -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:18 IST" name="afterMthd" finished-at="2025-12-29T09:20:18 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllHeaderMenusArePresent status=SUCCESS method=IGPHomepageTest.verifyAllHeaderMenusArePresent()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:18 IST" name="beforeMethod" finished-at="2025-12-29T09:20:18 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyAllTopNavigationMenusArePresent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAllTopNavigationMenusArePresent()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:18 IST" name="verifyAllTopNavigationMenusArePresent" finished-at="2025-12-29T09:20:18 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTopNavigationMenusArePresent -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:18 IST" name="afterMthd" finished-at="2025-12-29T09:20:18 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTopNavigationMenusArePresent status=SUCCESS method=IGPHomepageTest.verifyAllTopNavigationMenusArePresent()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyCartIsEmptyByDefault()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:18 IST" name="verifyCartIsEmptyByDefault" finished-at="2025-12-29T09:20:20 IST" duration-ms="2104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartIsEmptyByDefault -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:18 IST" name="beforeMethod" finished-at="2025-12-29T09:20:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyCartIsEmptyByDefault()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:20 IST" name="afterMthd" finished-at="2025-12-29T09:20:20 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCartIsEmptyByDefault status=SUCCESS method=IGPHomepageTest.verifyCartIsEmptyByDefault()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyHeartIconTurnsRedOnAddingItemToWishlist()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:20 IST" name="verifyHeartIconTurnsRedOnAddingItemToWishlist" finished-at="2025-12-29T09:20:23 IST" duration-ms="3027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeartIconTurnsRedOnAddingItemToWishlist -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:20 IST" name="beforeMethod" finished-at="2025-12-29T09:20:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyHeartIconTurnsRedOnAddingItemToWishlist()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:23 IST" name="afterMthd" finished-at="2025-12-29T09:20:23 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHeartIconTurnsRedOnAddingItemToWishlist status=SUCCESS method=IGPHomepageTest.verifyHeartIconTurnsRedOnAddingItemToWishlist()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyHomePageTitleIsCorrect()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:23 IST" name="verifyHomePageTitleIsCorrect" finished-at="2025-12-29T09:20:24 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleIsCorrect -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:23 IST" name="beforeMethod" finished-at="2025-12-29T09:20:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyHomePageTitleIsCorrect()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="afterMthd" finished-at="2025-12-29T09:20:24 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitleIsCorrect status=SUCCESS method=IGPHomepageTest.verifyHomePageTitleIsCorrect()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyHomePageUrlIsCorrect()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="verifyHomePageUrlIsCorrect" finished-at="2025-12-29T09:20:24 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageUrlIsCorrect -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="beforeMethod" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyHomePageUrlIsCorrect()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="afterMthd" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageUrlIsCorrect status=SUCCESS method=IGPHomepageTest.verifyHomePageUrlIsCorrect()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="beforeMethod" finished-at="2025-12-29T09:20:24 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyIGPLogoIsPresent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyIGPLogoIsPresent()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="verifyIGPLogoIsPresent" finished-at="2025-12-29T09:20:24 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIGPLogoIsPresent -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="afterMthd" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyIGPLogoIsPresent status=SUCCESS method=IGPHomepageTest.verifyIGPLogoIsPresent()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyTheFestiveMenus()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="verifyTheFestiveMenus" finished-at="2025-12-29T09:20:24 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheFestiveMenus -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="beforeMethod" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyTheFestiveMenus()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="afterMthd" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheFestiveMenus status=SUCCESS method=IGPHomepageTest.verifyTheFestiveMenus()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="beforeMethod" finished-at="2025-12-29T09:20:24 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyUserCanOpenAndCloseHamburgerMenu()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanOpenAndCloseHamburgerMenu()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="verifyUserCanOpenAndCloseHamburgerMenu" finished-at="2025-12-29T09:20:24 IST" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanOpenAndCloseHamburgerMenu -->
+        <test-method signature="verifyUserCanSearchForProduct()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="verifyUserCanSearchForProduct" finished-at="2025-12-29T09:20:26 IST" duration-ms="2082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSearchForProduct -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="afterMthd" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanOpenAndCloseHamburgerMenu status=SUCCESS method=IGPHomepageTest.verifyUserCanOpenAndCloseHamburgerMenu()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:24 IST" name="beforeMethod" finished-at="2025-12-29T09:20:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPHomepageTest.verifyUserCanSearchForProduct()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:26 IST" name="afterMthd" finished-at="2025-12-29T09:20:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanSearchForProduct status=SUCCESS method=IGPHomepageTest.verifyUserCanSearchForProduct()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:20:26 IST" name="tearDownClass" finished-at="2025-12-29T09:20:27 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testpackage.IGPHomepageTest@35d019a3]" started-at="2025-12-29T09:23:56 IST" name="tearDownSuite" finished-at="2025-12-29T09:23:57 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- testpackage.IGPHomepageTest -->
+      <class name="testpackage.IGPWishlistTest">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:27 IST" name="initializePages" finished-at="2025-12-29T09:20:33 IST" duration-ms="6741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:33 IST" name="beforeMethod" finished-at="2025-12-29T09:20:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPWishlistTest.verifyWishlistIsEmptyWhenNoItemsAdded()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyWishlistIsEmptyWhenNoItemsAdded()[pri:-1, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:33 IST" name="verifyWishlistIsEmptyWhenNoItemsAdded" finished-at="2025-12-29T09:20:35 IST" duration-ms="1845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWishlistIsEmptyWhenNoItemsAdded -->
+        <test-method signature="verifyUserCanAddItemToWishlist()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:35 IST" name="verifyUserCanAddItemToWishlist" finished-at="2025-12-29T09:20:40 IST" duration-ms="4911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddItemToWishlist -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:35 IST" name="beforeMethod" finished-at="2025-12-29T09:20:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPWishlistTest.verifyUserCanAddItemToWishlist()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:35 IST" name="afterMthd" finished-at="2025-12-29T09:20:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWishlistIsEmptyWhenNoItemsAdded status=SUCCESS method=IGPWishlistTest.verifyWishlistIsEmptyWhenNoItemsAdded()[pri:-1, instance:testpackage.IGPWishlistTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanNavigateToProductDetailsFromWishlist()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:40 IST" name="verifyUserCanNavigateToProductDetailsFromWishlist" finished-at="2025-12-29T09:20:50 IST" duration-ms="9794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanNavigateToProductDetailsFromWishlist -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:40 IST" name="afterMthd" finished-at="2025-12-29T09:20:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddItemToWishlist status=SUCCESS method=IGPWishlistTest.verifyUserCanAddItemToWishlist()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:40 IST" name="beforeMethod" finished-at="2025-12-29T09:20:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPWishlistTest.verifyUserCanNavigateToProductDetailsFromWishlist()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:50 IST" name="afterMthd" finished-at="2025-12-29T09:20:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanNavigateToProductDetailsFromWishlist status=SUCCESS method=IGPWishlistTest.verifyUserCanNavigateToProductDetailsFromWishlist()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanRemoveItemFromWishlist()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:50 IST" name="verifyUserCanRemoveItemFromWishlist" finished-at="2025-12-29T09:20:56 IST" duration-ms="6026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanRemoveItemFromWishlist -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:50 IST" name="beforeMethod" finished-at="2025-12-29T09:20:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPWishlistTest.verifyUserCanRemoveItemFromWishlist() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:56 IST" name="afterMthd" finished-at="2025-12-29T09:20:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanRemoveItemFromWishlist status=SUCCESS method=IGPWishlistTest.verifyUserCanRemoveItemFromWishlist()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyWishlistCountUpdatesCorrectly()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:56 IST" name="verifyWishlistCountUpdatesCorrectly" finished-at="2025-12-29T09:21:08 IST" duration-ms="11768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWishlistCountUpdatesCorrectly -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:20:56 IST" name="beforeMethod" finished-at="2025-12-29T09:20:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPWishlistTest.verifyWishlistCountUpdatesCorrectly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:21:08 IST" name="afterMthd" finished-at="2025-12-29T09:21:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWishlistCountUpdatesCorrectly status=SUCCESS method=IGPWishlistTest.verifyWishlistCountUpdatesCorrectly()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:21:08 IST" name="beforeMethod" finished-at="2025-12-29T09:21:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPWishlistTest.verifyWishlistPageTitleIsCorrect()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyWishlistPageTitleIsCorrect()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:21:08 IST" name="verifyWishlistPageTitleIsCorrect" finished-at="2025-12-29T09:21:09 IST" duration-ms="1493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWishlistPageTitleIsCorrect -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:21:09 IST" name="afterMthd" finished-at="2025-12-29T09:21:09 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWishlistPageTitleIsCorrect status=SUCCESS method=IGPWishlistTest.verifyWishlistPageTitleIsCorrect()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testpackage.IGPWishlistTest@145f66e3]" started-at="2025-12-29T09:21:09 IST" name="tearDownClass" finished-at="2025-12-29T09:21:10 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testpackage.IGPWishlistTest -->
+      <class name="testpackage.IGPProductDetailsTest">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:02 IST" name="initializePages" finished-at="2025-12-29T09:22:09 IST" duration-ms="6902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="verifyCorrectProductDetailsPageIsDisplayed()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:09 IST" name="verifyCorrectProductDetailsPageIsDisplayed" finished-at="2025-12-29T09:22:15 IST" duration-ms="5832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectProductDetailsPageIsDisplayed -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:09 IST" name="beforeMethod" finished-at="2025-12-29T09:22:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPProductDetailsTest.verifyCorrectProductDetailsPageIsDisplayed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyProductDetailsAreDisplayed()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:15 IST" name="verifyProductDetailsAreDisplayed" finished-at="2025-12-29T09:22:22 IST" duration-ms="6895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetailsAreDisplayed -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:15 IST" name="beforeMethod" finished-at="2025-12-29T09:22:15 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPProductDetailsTest.verifyProductDetailsAreDisplayed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:15 IST" name="afterMthd" finished-at="2025-12-29T09:22:15 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCorrectProductDetailsPageIsDisplayed status=SUCCESS method=IGPProductDetailsTest.verifyCorrectProductDetailsPageIsDisplayed()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanAddProductToWishlistFromProductDetailsPage()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:22 IST" name="verifyUserCanAddProductToWishlistFromProductDetailsPage" finished-at="2025-12-29T09:22:29 IST" duration-ms="7289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddProductToWishlistFromProductDetailsPage -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:22 IST" name="afterMthd" finished-at="2025-12-29T09:22:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductDetailsAreDisplayed status=SUCCESS method=IGPProductDetailsTest.verifyProductDetailsAreDisplayed()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:22 IST" name="beforeMethod" finished-at="2025-12-29T09:22:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPProductDetailsTest.verifyUserCanAddProductToWishlistFromProductDetailsPage() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanSelectDeliveryDate()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:29 IST" name="verifyUserCanSelectDeliveryDate" finished-at="2025-12-29T09:22:36 IST" duration-ms="6627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSelectDeliveryDate -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:29 IST" name="beforeMethod" finished-at="2025-12-29T09:22:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPProductDetailsTest.verifyUserCanSelectDeliveryDate()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:29 IST" name="afterMthd" finished-at="2025-12-29T09:22:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddProductToWishlistFromProductDetailsPage status=SUCCESS method=IGPProductDetailsTest.verifyUserCanAddProductToWishlistFromProductDetailsPage()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:36 IST" name="beforeMethod" finished-at="2025-12-29T09:22:36 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPProductDetailsTest.verifyUserCanSelectDeliveryLocation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:36 IST" name="afterMthd" finished-at="2025-12-29T09:22:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanSelectDeliveryDate status=SUCCESS method=IGPProductDetailsTest.verifyUserCanSelectDeliveryDate()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanSelectDeliveryLocation()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:36 IST" name="verifyUserCanSelectDeliveryLocation" finished-at="2025-12-29T09:22:40 IST" duration-ms="4828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSelectDeliveryLocation -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:40 IST" name="afterMthd" finished-at="2025-12-29T09:22:40 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanSelectDeliveryLocation status=SUCCESS method=IGPProductDetailsTest.verifyUserCanSelectDeliveryLocation()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserIsNavigatedToProductDetailsPage()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:40 IST" name="verifyUserIsNavigatedToProductDetailsPage" finished-at="2025-12-29T09:22:44 IST" duration-ms="4064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsNavigatedToProductDetailsPage -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:40 IST" name="beforeMethod" finished-at="2025-12-29T09:22:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPProductDetailsTest.verifyUserIsNavigatedToProductDetailsPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:44 IST" name="tearDownClass" finished-at="2025-12-29T09:22:45 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPProductDetailsTest@77888435]" started-at="2025-12-29T09:22:44 IST" name="afterMthd" finished-at="2025-12-29T09:22:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsNavigatedToProductDetailsPage status=SUCCESS method=IGPProductDetailsTest.verifyUserIsNavigatedToProductDetailsPage()[pri:0, instance:testpackage.IGPProductDetailsTest@77888435] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+      </class> <!-- testpackage.IGPProductDetailsTest -->
+      <class name="testpackage.IGPGiftCustomizationTest">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:22:45 IST" name="initializePages" finished-at="2025-12-29T09:22:52 IST" duration-ms="6933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="verifyNamePersonalizationOnProduct()[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:22:52 IST" name="verifyNamePersonalizationOnProduct" finished-at="2025-12-29T09:23:04 IST" duration-ms="12626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNamePersonalizationOnProduct -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:22:52 IST" name="beforeMethod" finished-at="2025-12-29T09:22:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPGiftCustomizationTest.verifyNamePersonalizationOnProduct() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanCustomizePhotoCakeWithImageUpload()[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:23:04 IST" name="verifyUserCanCustomizePhotoCakeWithImageUpload" finished-at="2025-12-29T09:23:31 IST" duration-ms="26478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanCustomizePhotoCakeWithImageUpload -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:23:04 IST" name="beforeMethod" finished-at="2025-12-29T09:23:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPGiftCustomizationTest.verifyUserCanCustomizePhotoCakeWithImageUpload() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:23:04 IST" name="afterMthd" finished-at="2025-12-29T09:23:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNamePersonalizationOnProduct status=SUCCESS method=IGPGiftCustomizationTest.verifyNamePersonalizationOnProduct()[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:23:31 IST" name="afterMthd" finished-at="2025-12-29T09:23:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanCustomizePhotoCakeWithImageUpload status=SUCCESS method=IGPGiftCustomizationTest.verifyUserCanCustomizePhotoCakeWithImageUpload()[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testpackage.IGPGiftCustomizationTest@73a1e9a9]" started-at="2025-12-29T09:23:31 IST" name="tearDownClass" finished-at="2025-12-29T09:23:31 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testpackage.IGPGiftCustomizationTest -->
+      <class name="testpackage.IGPCartTest">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:10 IST" name="initializePages" finished-at="2025-12-29T09:21:17 IST" duration-ms="6919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method is-config="true" signature="setupCartWithItem()[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:17 IST" name="setupCartWithItem" finished-at="2025-12-29T09:21:30 IST" duration-ms="13420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartWithItem -->
+        <test-method signature="verifyUserCanAddItemToCart()[pri:1, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:30 IST" name="verifyUserCanAddItemToCart" finished-at="2025-12-29T09:21:32 IST" duration-ms="2269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddItemToCart -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:30 IST" name="beforeMethod" finished-at="2025-12-29T09:21:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanAddItemToCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:32 IST" name="afterMthd" finished-at="2025-12-29T09:21:32 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddItemToCart status=SUCCESS method=IGPCartTest.verifyUserCanAddItemToCart()[pri:1, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanRemoveItemFromCart()[pri:2, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:32 IST" name="verifyUserCanRemoveItemFromCart" finished-at="2025-12-29T09:21:36 IST" duration-ms="3932" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Item was not removed from cart expected [1] but found [2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Item was not removed from cart expected [1] but found [2]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at testpackage.IGPCartTest.verifyUserCanRemoveItemFromCart(IGPCartTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanRemoveItemFromCart -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:32 IST" name="beforeMethod" finished-at="2025-12-29T09:21:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanRemoveItemFromCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:36 IST" name="afterMthd" finished-at="2025-12-29T09:21:36 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanRemoveItemFromCart status=FAILURE method=IGPCartTest.verifyUserCanRemoveItemFromCart()[pri:2, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanIncreaseItemQuantityInCart()[pri:3, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:36 IST" name="verifyUserCanIncreaseItemQuantityInCart" finished-at="2025-12-29T09:21:39 IST" duration-ms="3045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanIncreaseItemQuantityInCart -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:36 IST" name="beforeMethod" finished-at="2025-12-29T09:21:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanIncreaseItemQuantityInCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:39 IST" name="afterMthd" finished-at="2025-12-29T09:21:39 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanIncreaseItemQuantityInCart status=SUCCESS method=IGPCartTest.verifyUserCanIncreaseItemQuantityInCart()[pri:3, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:39 IST" name="beforeMethod" finished-at="2025-12-29T09:21:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanDecreaseItemQuantityInCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanDecreaseItemQuantityInCart()[pri:4, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:39 IST" name="verifyUserCanDecreaseItemQuantityInCart" finished-at="2025-12-29T09:21:43 IST" duration-ms="3883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanDecreaseItemQuantityInCart -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:43 IST" name="beforeMethod" finished-at="2025-12-29T09:21:43 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyCartIconCountUpdatesCorrectly() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:43 IST" name="afterMthd" finished-at="2025-12-29T09:21:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanDecreaseItemQuantityInCart status=SUCCESS method=IGPCartTest.verifyUserCanDecreaseItemQuantityInCart()[pri:4, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyCartIconCountUpdatesCorrectly()[pri:5, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:43 IST" name="verifyCartIconCountUpdatesCorrectly" finished-at="2025-12-29T09:21:47 IST" duration-ms="3662" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cart icon count did not update correctly expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cart icon count did not update correctly expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at testpackage.IGPCartTest.verifyCartIconCountUpdatesCorrectly(IGPCartTest.java:74)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartIconCountUpdatesCorrectly -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:47 IST" name="afterMthd" finished-at="2025-12-29T09:21:47 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCartIconCountUpdatesCorrectly status=FAILURE method=IGPCartTest.verifyCartIconCountUpdatesCorrectly()[pri:5, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:47 IST" name="beforeMethod" finished-at="2025-12-29T09:21:47 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyTotalPriceIsCalculatedCorrectly() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTotalPriceIsCalculatedCorrectly()[pri:6, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:47 IST" name="verifyTotalPriceIsCalculatedCorrectly" finished-at="2025-12-29T09:21:51 IST" duration-ms="4574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalPriceIsCalculatedCorrectly -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:51 IST" name="afterMthd" finished-at="2025-12-29T09:21:51 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTotalPriceIsCalculatedCorrectly status=SUCCESS method=IGPCartTest.verifyTotalPriceIsCalculatedCorrectly()[pri:6, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method signature="verifyUserCanNavigateBackToShoppingFromCart()[pri:7, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:51 IST" name="verifyUserCanNavigateBackToShoppingFromCart" finished-at="2025-12-29T09:21:57 IST" duration-ms="5561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanNavigateBackToShoppingFromCart -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:51 IST" name="beforeMethod" finished-at="2025-12-29T09:21:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanNavigateBackToShoppingFromCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:57 IST" name="afterMthd" finished-at="2025-12-29T09:21:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanNavigateBackToShoppingFromCart status=SUCCESS method=IGPCartTest.verifyUserCanNavigateBackToShoppingFromCart()[pri:7, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:57 IST" name="beforeMethod" finished-at="2025-12-29T09:21:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanProceedToCheckoutFromCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUserCanProceedToCheckoutFromCart()[pri:8, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:21:57 IST" name="verifyUserCanProceedToCheckoutFromCart" finished-at="2025-12-29T09:22:02 IST" duration-ms="4666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanProceedToCheckoutFromCart -->
+        <test-method signature="verifyUserCanAddItemToWishlistFromCart()[pri:9, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:22:02 IST" name="verifyUserCanAddItemToWishlistFromCart" finished-at="2025-12-29T09:22:02 IST" duration-ms="20" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='Account']"}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c9ed3971006ccdf15295ad18dc2ae1, findElement {using=xpath, value=//div[@title='Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55438}, goog:processID: 17336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55438/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92c9ed3971006ccdf15295ad18dc2ae1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='Account']"}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c9ed3971006ccdf15295ad18dc2ae1, findElement {using=xpath, value=//div[@title='Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55438}, goog:processID: 17336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55438/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92c9ed3971006ccdf15295ad18dc2ae1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:44)
+at testpackage.IGPCartTest.verifyUserCanAddItemToWishlistFromCart(IGPCartTest.java:113)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddItemToWishlistFromCart -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:22:02 IST" name="beforeMethod" finished-at="2025-12-29T09:22:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testpackage.IGPCartTest.verifyUserCanAddItemToWishlistFromCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:22:02 IST" name="afterMthd" finished-at="2025-12-29T09:22:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanProceedToCheckoutFromCart status=SUCCESS method=IGPCartTest.verifyUserCanProceedToCheckoutFromCart()[pri:8, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="afterMthd(org.testng.ITestResult)[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:22:02 IST" name="afterMthd" finished-at="2025-12-29T09:22:02 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddItemToWishlistFromCart status=FAILURE method=IGPCartTest.verifyUserCanAddItemToWishlistFromCart()[pri:9, instance:testpackage.IGPCartTest@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMthd -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testpackage.IGPCartTest@14cd1699]" started-at="2025-12-29T09:22:02 IST" name="tearDownClass" finished-at="2025-12-29T09:22:02 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testpackage.IGPCartTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
