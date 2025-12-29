@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>30/3/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>30/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 29 09:20:08 IST 2025</td>
+<td>Started on:</td><td>Mon Dec 29 11:01:32 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>227 seconds (227712 ms)</td>
+<tr><td>Total time:</td><td>269 seconds (269033 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,71 +77,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testpackage.IGPReminderTest.login()'><b>login</b><br>Test class: testpackage.IGPReminderTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
 	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1035394386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1035394386'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233142783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233142783'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
 	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -169,8 +124,8 @@ Session ID: 4ab56bde3a170901582aae016887e513
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>17</td>
-<td>testpackage.IGPReminderTest@71d44a3</td></tr>
+<td>22</td>
+<td>testpackage.IGPReminderTest@77888435</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -181,19 +136,19 @@ Session ID: 4ab56bde3a170901582aae016887e513
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testpackage.IGPCartTest.verifyUserCanRemoveItemFromCart()'><b>verifyUserCanRemoveItemFromCart</b><br>Test class: testpackage.IGPCartTest</td>
-<td><div><pre>java.lang.AssertionError: Item was not removed from cart expected [1] but found [2]
-	at testpackage.IGPCartTest.verifyUserCanRemoveItemFromCart(IGPCartTest.java:44)
+<td title='testpackage.IGPCartTest.verifyUserCanDecreaseItemQuantityInCart()'><b>verifyUserCanDecreaseItemQuantityInCart</b><br>Test class: testpackage.IGPCartTest</td>
+<td><div><pre>java.lang.AssertionError: Item Quantity in cart didnot decrease expected [1] but found [3]
+	at testpackage.IGPCartTest.verifyUserCanDecreaseItemQuantityInCart(IGPCartTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace766445308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace766445308'><pre>java.lang.AssertionError: Item was not removed from cart expected [1] but found [2]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1440057381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1440057381'><pre>java.lang.AssertionError: Item Quantity in cart didnot decrease expected [1] but found [3]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:1431)
 	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at testpackage.IGPCartTest.verifyUserCanRemoveItemFromCart(IGPCartTest.java:44)
+	at testpackage.IGPCartTest.verifyUserCanDecreaseItemQuantityInCart(IGPCartTest.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -222,136 +177,7 @@ Session ID: 4ab56bde3a170901582aae016887e513
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>3</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
-<tr>
-<td title='testpackage.IGPCartTest.verifyUserCanAddItemToWishlistFromCart()'><b>verifyUserCanAddItemToWishlistFromCart</b><br>Test class: testpackage.IGPCartTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@title=&apos;Account&apos;]&quot;}
-  (Session info: chrome=143.0.7499.170)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92c9ed3971006ccdf15295ad18dc2ae1, findElement {using=xpath, value=//div[@title=&apos;Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55438}, goog:processID: 17336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55438/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92c9ed3971006ccdf15295ad18dc2ae1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:44)
-	at testpackage.IGPCartTest.verifyUserCanAddItemToWishlistFromCart(IGPCartTest.java:113)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263495647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace263495647'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@title=&apos;Account&apos;]&quot;}
-  (Session info: chrome=143.0.7499.170)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92c9ed3971006ccdf15295ad18dc2ae1, findElement {using=xpath, value=//div[@title=&apos;Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55438}, goog:processID: 17336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55438/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92c9ed3971006ccdf15295ad18dc2ae1
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:44)
-	at testpackage.IGPCartTest.verifyUserCanAddItemToWishlistFromCart(IGPCartTest.java:113)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
-<tr>
-<td title='testpackage.IGPCartTest.verifyCartIconCountUpdatesCorrectly()'><b>verifyCartIconCountUpdatesCorrectly</b><br>Test class: testpackage.IGPCartTest</td>
-<td><div><pre>java.lang.AssertionError: Cart icon count did not update correctly expected [2] but found [1]
-	at testpackage.IGPCartTest.verifyCartIconCountUpdatesCorrectly(IGPCartTest.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540876179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace540876179'><pre>java.lang.AssertionError: Cart icon count did not update correctly expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at testpackage.IGPCartTest.verifyCartIconCountUpdatesCorrectly(IGPCartTest.java:74)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -362,155 +188,155 @@ Session ID: 92c9ed3971006ccdf15295ad18dc2ae1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testpackage.IGPCartTest.verifyUserCanIncreaseItemQuantityInCart()'><b>verifyUserCanIncreaseItemQuantityInCart</b><br>Test class: testpackage.IGPCartTest</td>
+<td title='testpackage.IGPCartTest.verifyUserCanProceedToCheckoutFromCart()'><b>verifyUserCanProceedToCheckoutFromCart</b><br>Test class: testpackage.IGPCartTest</td>
 <td></td>
-<td>3</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
-<tr>
-<td title='testpackage.IGPWishlistTest.verifyUserCanNavigateToProductDetailsFromWishlist()'><b>verifyUserCanNavigateToProductDetailsFromWishlist</b><br>Test class: testpackage.IGPWishlistTest</td>
-<td></td>
-<td>9</td>
-<td>testpackage.IGPWishlistTest@145f66e3</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyAllTopNavigationMenusArePresent()'><b>verifyAllTopNavigationMenusArePresent</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyIGPLogoIsPresent()'><b>verifyIGPLogoIsPresent</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
+<td>5</td>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
 <tr>
 <td title='testpackage.IGPHomepageTest.verifyHomePageTitleIsCorrect()'><b>verifyHomePageTitleIsCorrect</b><br>Test class: testpackage.IGPHomepageTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
 <tr>
-<td title='testpackage.IGPProductDetailsTest.verifyUserCanSelectDeliveryLocation()'><b>verifyUserCanSelectDeliveryLocation</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td title='testpackage.IGPCartTest.verifyUserCanNavigateBackToShoppingFromCart()'><b>verifyUserCanNavigateBackToShoppingFromCart</b><br>Test class: testpackage.IGPCartTest</td>
 <td></td>
-<td>4</td>
-<td>testpackage.IGPProductDetailsTest@77888435</td></tr>
+<td>34</td>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
 <tr>
 <td title='testpackage.IGPProductDetailsTest.verifyUserCanAddProductToWishlistFromProductDetailsPage()'><b>verifyUserCanAddProductToWishlistFromProductDetailsPage</b><br>Test class: testpackage.IGPProductDetailsTest</td>
 <td></td>
-<td>7</td>
-<td>testpackage.IGPProductDetailsTest@77888435</td></tr>
+<td>8</td>
+<td>testpackage.IGPProductDetailsTest@76505305</td></tr>
 <tr>
 <td title='testpackage.IGPHomepageTest.verifyTheFestiveMenus()'><b>verifyTheFestiveMenus</b><br>Test class: testpackage.IGPHomepageTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPWishlistTest.verifyWishlistPageTitleIsCorrect()'><b>verifyWishlistPageTitleIsCorrect</b><br>Test class: testpackage.IGPWishlistTest</td>
-<td></td>
-<td>1</td>
-<td>testpackage.IGPWishlistTest@145f66e3</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyCartIsEmptyByDefault()'><b>verifyCartIsEmptyByDefault</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>2</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyHeartIconTurnsRedOnAddingItemToWishlist()'><b>verifyHeartIconTurnsRedOnAddingItemToWishlist</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>3</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPProductDetailsTest.verifyUserCanSelectDeliveryDate()'><b>verifyUserCanSelectDeliveryDate</b><br>Test class: testpackage.IGPProductDetailsTest</td>
-<td></td>
-<td>6</td>
-<td>testpackage.IGPProductDetailsTest@77888435</td></tr>
-<tr>
-<td title='testpackage.IGPGiftCustomizationTest.verifyUserCanCustomizePhotoCakeWithImageUpload()'><b>verifyUserCanCustomizePhotoCakeWithImageUpload</b><br>Test class: testpackage.IGPGiftCustomizationTest</td>
-<td></td>
-<td>26</td>
-<td>testpackage.IGPGiftCustomizationTest@73a1e9a9</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyUserCanSearchForProduct()'><b>verifyUserCanSearchForProduct</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>2</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPCartTest.verifyUserCanProceedToCheckoutFromCart()'><b>verifyUserCanProceedToCheckoutFromCart</b><br>Test class: testpackage.IGPCartTest</td>
-<td></td>
-<td>4</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyAllHeaderMenusArePresent()'><b>verifyAllHeaderMenusArePresent</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>1</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyHomePageUrlIsCorrect()'><b>verifyHomePageUrlIsCorrect</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPHomepageTest.verifyUserCanOpenAndCloseHamburgerMenu()'><b>verifyUserCanOpenAndCloseHamburgerMenu</b><br>Test class: testpackage.IGPHomepageTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.IGPHomepageTest@35d019a3</td></tr>
-<tr>
-<td title='testpackage.IGPGiftCustomizationTest.verifyNamePersonalizationOnProduct()'><b>verifyNamePersonalizationOnProduct</b><br>Test class: testpackage.IGPGiftCustomizationTest</td>
-<td></td>
-<td>12</td>
-<td>testpackage.IGPGiftCustomizationTest@73a1e9a9</td></tr>
-<tr>
-<td title='testpackage.IGPProductDetailsTest.verifyProductDetailsAreDisplayed()'><b>verifyProductDetailsAreDisplayed</b><br>Test class: testpackage.IGPProductDetailsTest</td>
-<td></td>
-<td>6</td>
-<td>testpackage.IGPProductDetailsTest@77888435</td></tr>
-<tr>
-<td title='testpackage.IGPCartTest.verifyTotalPriceIsCalculatedCorrectly()'><b>verifyTotalPriceIsCalculatedCorrectly</b><br>Test class: testpackage.IGPCartTest</td>
-<td></td>
-<td>4</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
-<tr>
-<td title='testpackage.IGPCartTest.verifyUserCanNavigateBackToShoppingFromCart()'><b>verifyUserCanNavigateBackToShoppingFromCart</b><br>Test class: testpackage.IGPCartTest</td>
-<td></td>
-<td>5</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
-<tr>
-<td title='testpackage.IGPProductDetailsTest.verifyCorrectProductDetailsPageIsDisplayed()'><b>verifyCorrectProductDetailsPageIsDisplayed</b><br>Test class: testpackage.IGPProductDetailsTest</td>
-<td></td>
-<td>5</td>
-<td>testpackage.IGPProductDetailsTest@77888435</td></tr>
-<tr>
-<td title='testpackage.IGPWishlistTest.verifyUserCanRemoveItemFromWishlist()'><b>verifyUserCanRemoveItemFromWishlist</b><br>Test class: testpackage.IGPWishlistTest</td>
-<td></td>
-<td>6</td>
-<td>testpackage.IGPWishlistTest@145f66e3</td></tr>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
 <tr>
 <td title='testpackage.IGPCartTest.verifyUserCanAddItemToCart()'><b>verifyUserCanAddItemToCart</b><br>Test class: testpackage.IGPCartTest</td>
 <td></td>
 <td>2</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
 <tr>
-<td title='testpackage.IGPCartTest.verifyUserCanDecreaseItemQuantityInCart()'><b>verifyUserCanDecreaseItemQuantityInCart</b><br>Test class: testpackage.IGPCartTest</td>
+<td title='testpackage.IGPHomepageTest.verifyIGPLogoIsPresent()'><b>verifyIGPLogoIsPresent</b><br>Test class: testpackage.IGPHomepageTest</td>
 <td></td>
-<td>3</td>
-<td>testpackage.IGPCartTest@14cd1699</td></tr>
+<td>0</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
 <tr>
-<td title='testpackage.IGPProductDetailsTest.verifyUserIsNavigatedToProductDetailsPage()'><b>verifyUserIsNavigatedToProductDetailsPage</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td title='testpackage.IGPWishlistTest.verifyUserCanAddItemToWishlist()'><b>verifyUserCanAddItemToWishlist</b><br>Test class: testpackage.IGPWishlistTest</td>
 <td></td>
-<td>4</td>
-<td>testpackage.IGPProductDetailsTest@77888435</td></tr>
+<td>5</td>
+<td>testpackage.IGPWishlistTest@799f10e1</td></tr>
 <tr>
 <td title='testpackage.IGPWishlistTest.verifyWishlistIsEmptyWhenNoItemsAdded()'><b>verifyWishlistIsEmptyWhenNoItemsAdded</b><br>Test class: testpackage.IGPWishlistTest</td>
 <td></td>
 <td>1</td>
-<td>testpackage.IGPWishlistTest@145f66e3</td></tr>
+<td>testpackage.IGPWishlistTest@799f10e1</td></tr>
 <tr>
-<td title='testpackage.IGPWishlistTest.verifyUserCanAddItemToWishlist()'><b>verifyUserCanAddItemToWishlist</b><br>Test class: testpackage.IGPWishlistTest</td>
+<td title='testpackage.IGPHomepageTest.verifyHeartIconTurnsRedOnAddingItemToWishlist()'><b>verifyHeartIconTurnsRedOnAddingItemToWishlist</b><br>Test class: testpackage.IGPHomepageTest</td>
 <td></td>
-<td>4</td>
-<td>testpackage.IGPWishlistTest@145f66e3</td></tr>
+<td>3</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
 <tr>
-<td title='testpackage.IGPWishlistTest.verifyWishlistCountUpdatesCorrectly()'><b>verifyWishlistCountUpdatesCorrectly</b><br>Test class: testpackage.IGPWishlistTest</td>
+<td title='testpackage.IGPCartTest.verifyUserCanIncreaseItemQuantityInCart()'><b>verifyUserCanIncreaseItemQuantityInCart</b><br>Test class: testpackage.IGPCartTest</td>
+<td></td>
+<td>2</td>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
+<tr>
+<td title='testpackage.IGPHomepageTest.verifyUserCanSearchForProduct()'><b>verifyUserCanSearchForProduct</b><br>Test class: testpackage.IGPHomepageTest</td>
+<td></td>
+<td>1</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
+<tr>
+<td title='testpackage.IGPGiftCustomizationTest.verifyNamePersonalizationOnProduct()'><b>verifyNamePersonalizationOnProduct</b><br>Test class: testpackage.IGPGiftCustomizationTest</td>
+<td></td>
+<td>15</td>
+<td>testpackage.IGPGiftCustomizationTest@14cd1699</td></tr>
+<tr>
+<td title='testpackage.IGPHomepageTest.verifyCartIsEmptyByDefault()'><b>verifyCartIsEmptyByDefault</b><br>Test class: testpackage.IGPHomepageTest</td>
+<td></td>
+<td>1</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
+<tr>
+<td title='testpackage.IGPProductDetailsTest.verifyProductDetailsAreDisplayed()'><b>verifyProductDetailsAreDisplayed</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td></td>
+<td>3</td>
+<td>testpackage.IGPProductDetailsTest@76505305</td></tr>
+<tr>
+<td title='testpackage.IGPHomepageTest.verifyAllTopNavigationMenusArePresent()'><b>verifyAllTopNavigationMenusArePresent</b><br>Test class: testpackage.IGPHomepageTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
+<tr>
+<td title='testpackage.IGPProductDetailsTest.verifyUserCanSelectDeliveryDate()'><b>verifyUserCanSelectDeliveryDate</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td></td>
+<td>6</td>
+<td>testpackage.IGPProductDetailsTest@76505305</td></tr>
+<tr>
+<td title='testpackage.IGPProductDetailsTest.verifyCorrectProductDetailsPageIsDisplayed()'><b>verifyCorrectProductDetailsPageIsDisplayed</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td></td>
+<td>6</td>
+<td>testpackage.IGPProductDetailsTest@76505305</td></tr>
+<tr>
+<td title='testpackage.IGPHomepageTest.verifyHomePageUrlIsCorrect()'><b>verifyHomePageUrlIsCorrect</b><br>Test class: testpackage.IGPHomepageTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
+<tr>
+<td title='testpackage.IGPHomepageTest.verifyAllHeaderMenusArePresent()'><b>verifyAllHeaderMenusArePresent</b><br>Test class: testpackage.IGPHomepageTest</td>
+<td></td>
+<td>1</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
+<tr>
+<td title='testpackage.IGPCartTest.verifyCartIconCountUpdatesCorrectly()'><b>verifyCartIconCountUpdatesCorrectly</b><br>Test class: testpackage.IGPCartTest</td>
+<td></td>
+<td>3</td>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
+<tr>
+<td title='testpackage.IGPCartTest.verifyUserCanRemoveItemFromCart()'><b>verifyUserCanRemoveItemFromCart</b><br>Test class: testpackage.IGPCartTest</td>
+<td></td>
+<td>3</td>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
+<tr>
+<td title='testpackage.IGPWishlistTest.verifyUserCanNavigateToProductDetailsFromWishlist()'><b>verifyUserCanNavigateToProductDetailsFromWishlist</b><br>Test class: testpackage.IGPWishlistTest</td>
 <td></td>
 <td>11</td>
-<td>testpackage.IGPWishlistTest@145f66e3</td></tr>
+<td>testpackage.IGPWishlistTest@799f10e1</td></tr>
+<tr>
+<td title='testpackage.IGPHomepageTest.verifyUserCanOpenAndCloseHamburgerMenu()'><b>verifyUserCanOpenAndCloseHamburgerMenu</b><br>Test class: testpackage.IGPHomepageTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.IGPHomepageTest@2a3b5b47</td></tr>
+<tr>
+<td title='testpackage.IGPCartTest.verifyTotalPriceIsCalculatedCorrectly()'><b>verifyTotalPriceIsCalculatedCorrectly</b><br>Test class: testpackage.IGPCartTest</td>
+<td></td>
+<td>2</td>
+<td>testpackage.IGPCartTest@4218d6a3</td></tr>
+<tr>
+<td title='testpackage.IGPGiftCustomizationTest.verifyUserCanCustomizePhotoCakeWithImageUpload()'><b>verifyUserCanCustomizePhotoCakeWithImageUpload</b><br>Test class: testpackage.IGPGiftCustomizationTest</td>
+<td></td>
+<td>25</td>
+<td>testpackage.IGPGiftCustomizationTest@14cd1699</td></tr>
+<tr>
+<td title='testpackage.IGPWishlistTest.verifyWishlistPageTitleIsCorrect()'><b>verifyWishlistPageTitleIsCorrect</b><br>Test class: testpackage.IGPWishlistTest</td>
+<td></td>
+<td>1</td>
+<td>testpackage.IGPWishlistTest@799f10e1</td></tr>
+<tr>
+<td title='testpackage.IGPProductDetailsTest.verifyUserCanSelectDeliveryLocation()'><b>verifyUserCanSelectDeliveryLocation</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td></td>
+<td>6</td>
+<td>testpackage.IGPProductDetailsTest@76505305</td></tr>
+<tr>
+<td title='testpackage.IGPProductDetailsTest.verifyUserIsNavigatedToProductDetailsPage()'><b>verifyUserIsNavigatedToProductDetailsPage</b><br>Test class: testpackage.IGPProductDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>testpackage.IGPProductDetailsTest@76505305</td></tr>
+<tr>
+<td title='testpackage.IGPWishlistTest.verifyUserCanRemoveItemFromWishlist()'><b>verifyUserCanRemoveItemFromWishlist</b><br>Test class: testpackage.IGPWishlistTest</td>
+<td></td>
+<td>5</td>
+<td>testpackage.IGPWishlistTest@799f10e1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -521,72 +347,27 @@ Session ID: 92c9ed3971006ccdf15295ad18dc2ae1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testpackage.IGPReminderTest.verifyUserCanOpenReminderPageFromHeader()'><b>verifyUserCanOpenReminderPageFromHeader</b><br>Test class: testpackage.IGPReminderTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
+<td title='testpackage.IGPReminderTest.verifyUserCanAddANewReminder()'><b>verifyUserCanAddANewReminder</b><br>Test class: testpackage.IGPReminderTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
 	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2065764471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2065764471'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1065774928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1065774928'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
 	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -615,74 +396,80 @@ Session ID: 4ab56bde3a170901582aae016887e513
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testpackage.IGPReminderTest@71d44a3</td></tr>
+<td>testpackage.IGPReminderTest@77888435</td></tr>
+<tr>
+<td title='testpackage.IGPReminderTest.verifyUserCanOpenReminderPageFromHeader()'><b>verifyUserCanOpenReminderPageFromHeader</b><br>Test class: testpackage.IGPReminderTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
+	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174919051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174919051'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
+	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testpackage.IGPReminderTest@77888435</td></tr>
 <tr>
 <td title='testpackage.IGPReminderTest.verifyUserIsAbleToDeleteReminder()'><b>verifyUserIsAbleToDeleteReminder</b><br>Test class: testpackage.IGPReminderTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
 	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace533392019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace533392019'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1449926257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1449926257'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (cc62912419c9c7bcd2c4b339f67f6045)] -&gt; xpath: //a[normalize-space()=&apos;Login via Password&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58600}, goog:processID: 17600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc62912419c9c7bcd2c4b339f67f6045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
 	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -711,103 +498,7 @@ Session ID: 4ab56bde3a170901582aae016887e513
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testpackage.IGPReminderTest@71d44a3</td></tr>
-<tr>
-<td title='testpackage.IGPReminderTest.verifyUserCanAddANewReminder()'><b>verifyUserCanAddANewReminder</b><br>Test class: testpackage.IGPReminderTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
-	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917847816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace917847816'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=143.0.7499.170)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ab56bde3a170901582aae016887e513, findElement {using=xpath, value=//a[normalize-space()=&apos;Login via Password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51011}, goog:processID: 8032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51011/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ab56bde3a170901582aae016887e513
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pagepackage.IGPLoginPage.loginWithEmail(IGPLoginPage.java:47)
-	at testpackage.IGPReminderTest.login(IGPReminderTest.java:18)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>testpackage.IGPReminderTest@71d44a3</td></tr>
+<td>testpackage.IGPReminderTest@77888435</td></tr>
 </table><p>
 </body>
 </html>

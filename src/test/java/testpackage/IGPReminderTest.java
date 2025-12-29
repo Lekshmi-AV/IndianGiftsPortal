@@ -51,7 +51,7 @@ public class IGPReminderTest extends IGPBaseClass{
 	    rp.clickMoreOptions(0);
 	    rp.deleteReminder(0);
 
-	    By reminderItemsLocator = By.xpath("//div[contains(@class,'reminder_cards')]");
+	    By reminderItemsLocator = By.xpath("//div[contains(@class,'reminder_card')]");
 		wait.until(ExpectedConditions.numberOfElementsToBe(reminderItemsLocator, beforeCount - 1));
 	    int afterCount = rp.getReminderCount();
 

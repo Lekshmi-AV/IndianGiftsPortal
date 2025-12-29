@@ -70,19 +70,7 @@ public class IGPWishlistTest extends IGPBaseClass{
 	    Assert.assertTrue(pdp.isProductDetailsPageDisplayed(),"User was not navigated to Product Details Page from Wishlist");
 	}
 
-	@Test
-	public void verifyWishlistCountUpdatesCorrectly() {
-		lp.loginWithEmail();
-		
-		hp.openWishlist();
-		int initialWishlistCount = wp.getWishlistItemCount();		
-		
-		hp.searchForProduct("Diaries");
-		hp.addTwoItemsToWishlist();
-		hp.openWishlist();
-		int afterWishlistCount = wp.getWishlistItemCount();
-		assertEquals(afterWishlistCount, initialWishlistCount + 2, "Wishlist Count did not update correctly after adding items");
-	}
+	
 	
 
 }

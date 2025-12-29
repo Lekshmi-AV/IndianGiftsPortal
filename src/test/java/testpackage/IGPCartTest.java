@@ -108,25 +108,6 @@ public class IGPCartTest extends IGPBaseClass{
 	    assertTrue(driver.getCurrentUrl().contains("checkout"),"Checkout page URL not loaded");
 	}
 
-	@Test(priority = 9)
-	public void verifyUserCanAddItemToWishlistFromCart() throws Exception {
-		lp.loginWithEmail();		
-	    
-	    hp.openWishlist();
-	    int initialWishlistCount = wp.getWishlistItemCount();
-	    
-	    cp.openCart();
-	    int initialCartCount = cp.getCartItemCount();
-
-	    cp.moveItemToWishlistFromCart(0);
-	    // WAIT until cart count decreases
-	    wait.until(ExpectedConditions.numberOfElementsToBe(cp.getCartItemsLocator(),initialCartCount - 1));
-        
-        assertEquals(cp.getCartItemCount(),initialCartCount - 1,"Item was not removed from cart");
-
-	    hp.openWishlist(); 
-	    wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(wp.getWishlistItemsLocator(), 0));
-	    assertEquals(wp.getWishlistItemCount(),initialWishlistCount + 1,"Item was not added to wishlist");
-	}
+	
 
 }

@@ -8,25 +8,23 @@
           <include name="tearDownClass"/>
           <include name="setUp"/>
           <include name="initializePages"/>
-          <include name="verifyUserCanAddItemToWishlistFromCart"/>
           <include name="setupCartWithItem"/>
           <include name="afterMthd"/>
           <include name="tearDownSuite"/>
-          <include name="verifyCartIconCountUpdatesCorrectly"/>
           <include name="beforeMethod"/>
-          <include name="verifyUserCanRemoveItemFromCart"/>
+          <include name="verifyUserCanDecreaseItemQuantityInCart"/>
         </methods>
       </class> <!-- testpackage.IGPCartTest -->
       <class name="testpackage.IGPReminderTest">
         <methods>
           <include name="tearDownClass"/>
           <include name="setUp"/>
-          <include name="verifyUserCanAddANewReminder"/>
           <include name="verifyUserCanOpenReminderPageFromHeader"/>
+          <include name="verifyUserCanAddANewReminder"/>
           <include name="initializePages"/>
           <include name="verifyUserIsAbleToDeleteReminder"/>
-          <include name="tearDownSuite"/>
           <include name="afterMthd"/>
+          <include name="tearDownSuite"/>
           <include name="beforeMethod"/>
           <include name="login"/>
         </methods>

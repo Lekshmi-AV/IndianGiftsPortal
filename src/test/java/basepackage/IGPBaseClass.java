@@ -76,7 +76,7 @@ public class IGPBaseClass {
 		pdp = new IGPProductDetailsPage(driver);
 		rp = new IGPReminderPage(driver);
 		gcp = new IGPGiftCustomizationPage(driver);
-		act = new Actions(driver);		
+		//act = new Actions(driver);		
 	}	
 	
 	@BeforeMethod(alwaysRun = true)
