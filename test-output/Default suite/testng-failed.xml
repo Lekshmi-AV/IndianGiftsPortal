@@ -7,8 +7,6 @@
         <methods>
           <include name="tearDownClass"/>
           <include name="setUp"/>
-          <include name="verifyUserCanAddANewReminder"/>
-          <include name="verifyUserCanOpenReminderPageFromHeader"/>
           <include name="initializePages"/>
           <include name="verifyUserIsAbleToDeleteReminder"/>
           <include name="afterMthd"/>

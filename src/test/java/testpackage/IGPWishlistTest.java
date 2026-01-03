@@ -71,6 +71,18 @@ public class IGPWishlistTest extends IGPBaseClass{
 	}
 
 	
-	
+	@Test
+	public void verifyWishlistCountUpdatesCorrectly() {
+		lp.loginWithEmail();
+		
+		hp.openWishlist();
+		int initialWishlistCount = wp.getWishlistItemCount();		
+		
+		hp.searchForProduct("Diaries");
+		hp.addTwoItemsToWishlist();
+		hp.openWishlist();
+		int afterWishlistCount = wp.getWishlistItemCount();
+		assertEquals(afterWishlistCount, initialWishlistCount + 2, "Wishlist Count did not update correctly after adding items");
+	}
 
 }
